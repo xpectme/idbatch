@@ -1,0 +1,23 @@
+{
+  "name": "idbatch",
+  "version": "0.0.1",
+  "description": "IndexedDB Batch function for creating a transaction with multiple queries at once.",
+  "types": "dest/idbatch.d.ts",
+  "module": "dest/idbatch.js",
+  "browser": "dest/idbatch.js",
+  "main": "dest/idbatch.js",
+  "type": "module",
+  "scripts": {
+    "ts-types": "tsc --emitDeclarationOnly",
+    "bundleDts": "mv dest/types/mod.d.ts dest/idbatch.d.ts",
+    "build": "rimraf dest && node ./esbuild.js && npm run ts-types && npm run bundleDts && rimraf dest/types"
+  },
+  "keywords": [],
+  "author": "Mario Stöcklein <mstoecklein@xp.live>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "esbuild": "^0.18.11",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
