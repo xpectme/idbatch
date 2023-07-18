@@ -1,6 +1,6 @@
 {
   "name": "idbatch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "IndexedDB Batch function for creating a transaction with multiple queries at once.",
   "types": "dest/idbatch.d.ts",
   "module": "dest/idbatch.js",
@@ -15,8 +15,8 @@
   "keywords": [],
   "author": "Mario Stöcklein <mstoecklein@xp.live>",
   "license": "BSD-2-Clause",
-  "dependencies": {
-    "esbuild": "^0.18.11",
+  "devDependencies": {
+    "esbuild": "^0.18.14",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   }
